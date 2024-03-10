@@ -1,0 +1,6 @@
+wheel
+gunicorn
+flask
+python-dotenv
+requests
+boto3
