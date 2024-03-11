@@ -9,6 +9,8 @@ This web service uses the following components:
 - AWS Dynamo is the database for storing the results of the analysis
 - A Flask application was developed for integrating all service and implementing the endpoints for uploading audios, listing results and querying a single result
 
+![Speech analyzer](figs/cc-full-scheme.png)
+
 For deploying the web services the following steps must be performed:
 
 ### 1. Clone the base repository
