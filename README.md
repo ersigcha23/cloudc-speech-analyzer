@@ -27,6 +27,8 @@ cd cloudc-speech-analyzer
 
 Prior to deploying the containers, it is required to include the credentials file to access S3 services, DynamoDB, and AWS Lambda functions.
 
+The instructions of the required Roles, Lambda functions and DynamoDB Table are included in this [PDF file](https://github.com/ersigcha23/cloudc-speech-analyzer/blob/f48b275b44006d74d29c7720e0c89eb6174d02e0/InstruccionesAWS.pdf)
+
 The credentials file should be located in the cloudc-speech-analyzer/speech-analyzer-webservice directory. The following command can be used to create the "credentials" file:
 
 ```
