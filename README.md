@@ -81,7 +81,7 @@ whisper-asr-webservice-1  | [2024-03-09 22:11:44 +0000] [7] [INFO] Application s
 ```
 In order to perform the following steps, you must open another Terminal window.
 
-### 4. Supported enpoints
+### 4. Supported endpoints
 
 The following endpoits are available:
 
@@ -113,6 +113,24 @@ This endpoint returns the full details of one of audio files uploaded to the Ser
 
 ```bash
 curl -X GET http://<SERVER_IP>/results/<s3Filename_of_the_audiofile>
+```
+
+### Test the deployed service in the UCuenca Cloud Computing Server
+
+The service is deployed on the University of Cuenca cloud computing server. In order to test the endpoints, you can execute the following commands, which will send requests to the server with IP 10.0.2.249:
+
+You will need a VPN connection in order to test the endpoints. You can use the audio-test file:
+
+```bash
+curl -X POST -F "file=@<Path-to-the-mp3-audio-file>" http://10.0.2.149/uploadFile
+```
+
+```bash
+curl -X GET http://10.0.2.149/results
+```
+
+```bash
+curl -X GET http://10.0.2.149/results/<s3Filename_of_the_audiofile>
 ```
 
 ### 6 - Turning down the containers
