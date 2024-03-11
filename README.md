@@ -122,15 +122,15 @@ The service is deployed on the University of Cuenca cloud computing server. In o
 You will need a VPN connection in order to test the endpoints. You can use the [audio-test](https://github.com/ersigcha23/cloudc-speech-analyzer/blob/9c4aa870cb95952f4b176e10e2be729a04e71321/audio-test1.mp3) file:
 
 ```bash
-curl -X POST -F "file=@<Path-to-the-mp3-audio-file>" http://10.0.2.149/uploadFile
+curl -X POST -F "file=@<Path-to-the-mp3-audio-file>" http://10.0.2.249/uploadFile
 ```
 
 ```bash
-curl -X GET http://10.0.2.149/results
+curl -X GET http://10.0.2.249/results
 ```
 
 ```bash
-curl -X GET http://10.0.2.149/results/<s3Filename_of_the_audiofile>
+curl -X GET http://10.0.2.249/results/<s3Filename_of_the_audiofile>
 ```
 
 ### 6 - Turning down the containers
