@@ -119,7 +119,7 @@ curl -X GET http://<SERVER_IP>/results/<s3Filename_of_the_audiofile>
 
 The service is deployed on the University of Cuenca cloud computing server. In order to test the endpoints, you can execute the following commands, which will send requests to the server with IP 10.0.2.249:
 
-You will need a VPN connection in order to test the endpoints. You can use the audio-test file:
+You will need a VPN connection in order to test the endpoints. You can use the [audio-test](https://github.com/ersigcha23/cloudc-speech-analyzer/blob/9c4aa870cb95952f4b176e10e2be729a04e71321/audio-test1.mp3) file:
 
 ```bash
 curl -X POST -F "file=@<Path-to-the-mp3-audio-file>" http://10.0.2.149/uploadFile
